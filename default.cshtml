@@ -1,0 +1,6 @@
+﻿@{
+    int delay = Request["sleep"].AsInt();
+    System.Threading.Thread.Sleep(delay);
+}
+
+Slept @(delay)ms.
