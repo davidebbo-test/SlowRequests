@@ -3,4 +3,9 @@
     System.Threading.Thread.Sleep(delay);
 }
 
-Slept @(delay)ms.
+@if (delay == 0) {
+<p>Pass the sleep on the query string (in ms). e.g. <a href="?sleep=2000">?sleep=2000</a></p>
+}
+else {
+<p>Slept @(delay)ms.</p>
+}
